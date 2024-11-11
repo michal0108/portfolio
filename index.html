@@ -3,33 +3,488 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moje Portfolio</title>
+    <title>Portfolio Michała Pomykały</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-    <header>
-        <h1>Moje Portfolio</h1>
+
+    <!-- Pasek nawigacyjny, który pozostanie na górze strony -->
+    <header id="navbar">
+        <h1>Michał Pomykała</h1>
         <nav>
             <ul>
+                <li><a href="#hero">Strona główna</a></li>
                 <li><a href="#about">O mnie</a></li>
+                <li><a href="#education">Edukacja</a></li>
+                <li><a href="#experience">Doświadczenie</a></li>
                 <li><a href="#projects">Projekty</a></li>
-                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section id="about">
-        <h2>O mnie</h2>
-        <p>Krótki opis o sobie.</p>
+
+    <!-- Sekcja Hero z informacjami kontaktowymi pod zdjęciem -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Michał Pomykała</h1>
+            <h2>Inżynier mechanik i pasjonat technologii</h2>
+            <p>Tworzę innowacyjne rozwiązania techniczne, korzystając z najnowszych technologii</p>
+        </div>
+        <div class="hero-image">
+            <img src="D:/Users/mpomy/OneDrive/Pulpit/Portfolio/ZDJ.png" alt="Michał Pomykała">
+            <div class="contact-info">
+                <ul>
+                    <li><i class="fas fa-calendar-alt"></i> 08.01.2001</li>
+                    <li><i class="fas fa-phone-alt"></i> 604-510-456</li>
+                    <li><i class="fas fa-envelope"></i> mpomykala105@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Iłża, radomski, mazowieckie</li>
+                </ul>
+            </div>
+        </div>
     </section>
-    
+
+    <!-- Sekcja O mnie -->
+<section id="about" data-aos="fade-up">
+    <h2><i class="fas fa-user"></i> O mnie</h2>
+    <div class="about-container">
+        <!-- Kolumna ze zdjęciami -->
+        <div class="about-image">
+            <img src="D:/Users/mpomy/OneDrive/Pulpit/Portfolio/ZDJ2.jpg" alt="Zdjęcie 1">
+            <img src="D:/Users/mpomy/OneDrive/Pulpit/Portfolio/ZDJ3.jpg" alt="Zdjęcie 2">
+            <img src="D:/Users/mpomy/OneDrive/Pulpit/Portfolio/ZDJ4.jpg" alt="Zdjęcie 3">
+        </div>
+        <!-- Kolumna z tekstem -->
+        <div class="about-text">
+            <p>Nazywam się Michał Pomykała. Jestem inżynierem z wykształcenia i pasji. Ukończyłem Politechnikę Krakowską im. Tadeusza Kościuszki, zdobywając tytuł inżyniera na kierunku Mechanika i Budowa Maszyn, w specjalizacji komputerowo wspomagane projektowanie inżynierskie. Moje zaangażowanie w naukę zostało nagrodzone stypendium rektora za zostanie najlepszym studentem na pierwszym roku studiów. Już po ukończeniu drugiego roku studiów podjąłem pracę w międzynarodowej firmie, co pozwoliło mi na zdobywanie praktycznego doświadczenia równolegle z kontynuacją nauki.</p>
+        <p>Od 2019 roku prowadzę rodzinne gospodarstwo rolne specjalizujące się w produkcji roślinnej. Pasja do rolnictwa skłoniła mnie do ukończenia zaocznego technikum rolniczego, gdzie zdobyłem tytuł technika w prowadzeniu produkcji rolniczej. Praca w gospodarstwie rolnym pozwoliła mi na rozszerzenie wiedzy inżynierskiej, co przekłada się na jeszcze lepsze zrozumienie problemów i skuteczne wdrażanie nowoczesnych rozwiązań w innych branżach.</p>
+        <p>Obecnie pracuję jako Junior Engineer w firmie Motherson Group, gdzie mam okazję wdrażać innowacyjne technologie w ramach przemysłu 4.0. Jednym z moich największych sukcesów było wdrożenie systemu monitorowania wydajności pracy, które zwiększyło efektywność produkcji o 15%. W codziennej pracy wykorzystuję zaawansowane narzędzia do modelowania 3D, takie jak CATIA V5 i SolidWorks, a także inne programy takie jak na przykład Pycharm, w którym tworzę aplikacje wykorzystujące sztuczną inteligencję. Dodatkowo korzystam z wielu wewnętrznych programów firmowych, które pomagają w automatyzacji i usprawnianiu procesów.</p>
+        <p>Oprócz pracy technicznej, zajmuję się prowadzeniem spotkań raportujących postępy projektów bezpośrednio do zarządu zakładu. Odpowiadam również za organizację workshopów, podczas których delegacje z innych zakładów wchodzących w skład grupy Motherson mogą zapoznać się z technologiami, które wdrażamy w zakładach w Polsce.</p>
+	<p>Prywatnie interesuję się zastosowaniem nowoczesnych technoligii <p>
+    </section>
+
+
+
+
+    <!-- Sekcja Edukacja -->
+<section id="education" data-aos="fade-up">
+    <h2><i class="fas fa-book"></i> Edukacja</h2>
+    <div class="timeline">
+        <!-- Gimnazjum (bez logo) -->
+        <div class="timeline-item">
+            <div class="timeline-date">2014-2017 <span class="school-name">Publiczne Gimnazjum Gminne w Iłży</span></div>
+            <div class="timeline-content">
+                <img src="D:/Users/mpomy/OneDrive/Pulpit/Portfolio/ZDJ5.JPG" alt="Publiczne Gimnazjum Gminne w Iłży">
+                <p>Moja edukacyjna podróż na dobre rozpoczęła się w Publicznym Gimnazjum Gminnym w Iłży im. Armii Krajowej...</p>
+            </div>
+        </div>
+
+        <!-- Liceum -->
+        <div class="timeline-item">
+            <div class="timeline-date">2017-2020 <span class="school-name">Liceum Ogólnokształcące w Iłży</span></div>
+            <div class="timeline-content">
+                <img src="D:/Users/mpomy/OneDrive/Pulpit/Portfolio/ZDJ12.png" alt="Logo Liceum" class="school-logo">
+                <img src="D:/Users/mpomy/OneDrive/Pulpit/Portfolio/ZDJ6.jpeg" alt="Liceum Ogólnokształcące w Iłży">
+                <p>W latach 2017–2020 uczęszczałem do Liceum Ogólnokształcącego w Iłży...</p>
+            </div>
+        </div>
+
+        <!-- Technikum rolnicze -->
+        <div class="timeline-item">
+            <div class="timeline-date">2019-2021 <span class="school-name">Technikum Rolnicze w Chwałowicach</span></div>
+            <div class="timeline-content">
+                <img src="D:/Users/mpomy/OneDrive/Pulpit/Portfolio/ZDJ9.png" alt="Logo Technikum Rolnicze" class="school-logo">
+                <img src="D:/Users/mpomy/OneDrive/Pulpit/Portfolio/ZDJ10.jpg" alt="Technikum Rolnicze w Chwałowicach">
+                <p>W latach 2019–2021 uczęszczałem do Technikum Rolniczego w Chwałowicach...</p>
+            </div>
+        </div>
+
+        <!-- Politechnika -->
+        <div class="timeline-item">
+            <div class="timeline-date">2020-2024 <span class="school-name">Politechnika Krakowska</span></div>
+            <div class="timeline-content">
+                <img src="D:/Users/mpomy/OneDrive/Pulpit/Portfolio/ZDJ11.png" alt="Logo Politechnika Krakowska" class="school-logo">
+                <img src="D:/Users/mpomy/OneDrive/Pulpit/Portfolio/ZDJ7.jpg" alt="Politechnika Krakowska">
+                <p>Studiowałem na Politechnice Krakowskiej im. Tadeusza Kościuszki...</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Sekcja Doświadczenie -->
+<section id="experience" data-aos="fade-up">
+    <h2><i class="fas fa-briefcase"></i> Doświadczenie</h2>
+    <div class="timeline">
+        
+        <!-- Junior Engineer -->
+        <div class="timeline-item">
+            <div class="timeline-date">
+                Lipiec 2024 – Obecnie 
+                <img src="D:/Users/mpomy/OneDrive/Pulpit/Portfolio/ZDJ8.png" alt="Logo Motherson Group" class="inline-logo">
+            </div>
+            <div class="timeline-content">
+                <h3>Junior Engineer</h3>
+                <p>Wdrożenie systemu monitorowania wydajności pracy operatorów...</p>
+            </div>
+        </div>
+
+        <!-- Technical Support Engineer -->
+        <div class="timeline-item">
+            <div class="timeline-date">
+                Lipiec 2022 – Czerwiec 2024 
+                <img src="D:/Users/mpomy/OneDrive/Pulpit/Portfolio/ZDJ8.png" alt="Logo Motherson Group" class="inline-logo">
+            </div>
+            <div class="timeline-content">
+                <h3>Technical Support Engineer</h3>
+                <p>Wsparcie we wdrażaniu nowych projektów na obszarze produkcji wiązek elektrycznych...</p>
+            </div>
+        </div>
+
+        <!-- Gospodarstwo rolne -->
+<div class="timeline-item">
+    <div class="timeline-date">
+        2019 – Obecnie 
+        <img src="D:/Users/mpomy/OneDrive/Pulpit/Portfolio/ZDJ13.png" alt="Grafika gospodarstwa rolnego" class="farm-logo">
+    </div>
+    <div class="timeline-content">
+        <h3>Prowadzenie gospodarstwa rolnego</h3>
+        <p>Specjalizacja w produkcji roślinnej, wdrażanie nowoczesnych rozwiązań rolniczych...</p>
+    </div>
+</div>
+
+    </div>
+</section>
+
+
+
+
+
     <section id="projects">
-        <h2>Projekty</h2>
-        <p>Opis projektów.</p>
-    </section>
-    
-    <footer>
-        <p>Kontakt: Twoje imię, e-mail</p>
-    </footer>
+    <h2><i class="fas fa-code"></i> Projekty</h2>
+
+    <!-- Sekcja projektu Crimp Area Management -->
+    <div class="project">
+        <h3>Zwiększenie wydajności obszaru zakuwania przewodów</h3>
+        <p class="short-description">
+            Projekt polegający na zwiększeniu wydajności obszaru zakuwania i zgrzewania ultradźwiękowego przewodów.
+        </p>
+        
+        <!-- Główne zdjęcie projektu -->
+        <a href="#img1">
+            <!--<img src="imagesCAM/CAM1.jpg" alt="Główne zdjęcie projektu Crimp Area Management" class="main-image">-->
+        </a>
+
+        <!-- Lightbox dla głównego zdjęcia -->
+        <div id="img1" class="lightbox">
+            <a href="#projects" class="close-lightbox">&times;</a>
+            <img src="imagesCAM/CAM1.jpg" alt="Główne zdjęcie projektu Crimp Area Management">
+        </div>
+
+        <!-- Przełącznik widoczności galerii -->
+        <input type="checkbox" id="toggle-gallery" class="toggle-input">
+        <label for="toggle-gallery" class="read-more">Czytaj więcej...</label>
+
+        <!-- Galeria zdjęć i szczegółowy opis (początkowo ukryte) -->
+        <div class="gallery">
+            <h4>Mój zakres obowiązków</h4>
+            <div class="decorative-marker"></div>
+	    <h4>Przygotowanie koncepcji wizualnej urządzenia oraz uczestnictwo w procesie przygotowania opisu wymagań</h4>
+            <p class="full-description">
+                 Byłem odpowiedzialny za zaprojektowanie koncepcji wizialnej urządzenia, którą wykonałem w programie CATIA V5. Uczestniczyłem również od samego początku w procesie przygotowania całego opisu specyfikacji oraz wymagań jakie stawiane były dla zewnętrznego dostawcy sprzętu oraz oprogramowania.
+            </p>
+             
+            <!-- Zdjęcia z możliwością powiększenia -->
+            <!--<a href="#img2">-->
+                <!--<img src="imagesCAM/CAM16.png" alt="Przykładowe zdjęcie projektu Crimp Area Management" class="secondary-image">-->
+            </a>
+            <div id="img2" class="lightbox">
+                <a href="#projects" class="close-lightbox">&times;</a>
+                <img src="imagesCAM/CAM16.png" alt="Przykładowe zdjęcie projektu Crimp Area Management">
+            </div>
+
+            <h4>Zaprojektowanie uniwersalnych uchwytów do maszyn</h4>
+            <p class="full-description">
+                Opracowałem dwa modele uniwersalnych uchwytów do pras zakuwających rónych modeli, tak aby w jak największym stopniu ułatwiły one montaż urządzeń oraz późniejszy serwis. W pierwszymm modelu zastosowałem przyssawki próźniowe o dużej przyczepności, natomiast w drugim magnesy neodymowe. Oba modele wykonałem w oprogramowaniu Solidworks.
+            </p>
+            
+            <!-- Zdjęcia dla nowego podpunktu z lightboxem -->
+            <div class="additional-images">
+                <!--<a href="#img3"><img src="imagesCAM/CAM6.jpg" alt="Zdjęcie uchwytu 1"></a>-->
+                <!--<a href="#img4"><img src="imagesCAM/CAM7.jpg" alt="Zdjęcie uchwytu 2"></a>-->
+                <!--<a href="#img5"><img src="imagesCAM/CAM10.jpg" alt="Zdjęcie uchwytu 3"></a>-->
+                <!--<a href="#img6"><img src="imagesCAM/CAM11.jpg" alt="Zdjęcie uchwytu 4"></a>-->
+                <!--<a href="#img7"><img src="imagesCAM/CAM12.jpg" alt="Zdjęcie uchwytu 5"></a>-->
+                
+                <!-- Lightbox dla każdego zdjęcia -->
+                <div id="img3" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesCAM/CAM6.jpg" alt="Zdjęcie uchwytu 1"></div>
+                <div id="img4" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesCAM/CAM7.jpg" alt="Zdjęcie uchwytu 2"></div>
+                <div id="img5" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesCAM/CAM10.jpg" alt="Zdjęcie uchwytu 3"></div>
+                <div id="img6" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesCAM/CAM11.jpg" alt="Zdjęcie uchwytu 4"></div>
+                <div id="img7" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesCAM/CAM12.jpg" alt="Zdjęcie uchwytu 5"></div>
+            </div>
+            
+	    <h4>Zaprojektowanie obudów na czytniki RFID oraz programowanie tagów RFID</h4>
+            <p class="full-description">
+                Kolejny etap za jaki byłem odpowiedzialny to zaprojektowanie koncepcji obudowy na czytniki RFID, aby można było z łatwością przymocować do niej tagi RFID. Zaprogramowałem również 1600 tagów RFID za pomocą oprogramowania od zewnętrznego dostawcy.
+            </p>
+            
+            <!-- Zdjęcia dla nowego podpunktu z lightboxem -->
+            <div class="additional-images">
+                <!--<a href="#img8"><img src="imagesCAM/CAM8.jpg" alt="Zdjęcie obudowy1"></a>-->
+                <!--<a href="#img9"><img src="imagesCAM/CAM9.jpg" alt="Zdjęcie obudowy2"></a>-->
+                
+                <!-- Lightbox dla każdego zdjęcia -->
+                <!--<div id="img8" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesCAM/CAM8.jpg" alt="Zdjęcie obudowy1"></div>-->
+                <!--<div id="img9" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesCAM/CAM9.jpg" alt="Zdjęcie obudowy2"></div>-->                
+            </div>
+
+	     <h4>Przygotowanie urządzeń do montażu oraz uczestnictwo w montażu urządzeń prasach</h4>
+            <p class="full-description">
+                Przygotowałem bazę ponad 200 użytkowników systemu, skonfigurowałem urządzeniu pod kątem baz danych użytkowników oraz tagów RFID, oraz zaprogramowałem skanery 3D.Uczestniczyłem również w procesie montażu urządzeń.
+            </p>
+            
+            <!-- Zdjęcia dla nowego podpunktu z lightboxem -->
+            <div class="additional-images">
+                <!--<a href="#img10"><img src="imagesCAM/CAM13.jpg" alt="Zdjęcie prasy1"></a>-->
+                <!--<a href="#img11"><img src="imagesCAM/CAM14.jpg" alt="Zdjęcie prasy2"></a>-->
+                <!--<a href="#img12"><img src="imagesCAM/CAM15.png" alt="Zdjęcie prasy3"></a>-->
+
+                <!-- Lightbox dla każdego zdjęcia -->
+                <!--<div id="img10" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesCAM/CAM13.jpg" alt="Zdjęcie prasy1"></div>-->
+                <!--<div id="img11" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesCAM/CAM14.jpg" alt="Zdjęcie prasy2"></div>-->
+		<!--<div id="img12" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesCAM/CAM15.png" alt="Zdjęcie prasy3"></div>-->                
+            </div>
+
+	    <h4>Opracowanie instrukcji montażu i serwisu urządzeń oraz przeprowadzenie szkoleń dla pracowników</h4>
+            <p class="full-description">
+                Opracowałem instrukcję montażu i instrukcje serwisowe oraz przeprowadziłem serię szkoleń z zakresu serwisu i obsuługi dla pracowników z działu utrzymania ruchu
+            </p>
+
+	    <h4>Stworzenie aplikacji do monitoringu w czasie rzeczywistym</h4>
+            <p class="full-description">
+                Za pomocą sztucznej inteligencji stworzyłem od początku do końca aplikację w języku python, pozwalającą na monitoring wydajności pracowników w czasie rzeczywistym. W celu zwiększenia produktywności pracowników moja aplikacja wyświetlana była na kliku monitorach nad stanowiskami pracy, tak aby pracownicy obserwowali swoją wydajność  i mieli możliwość porównania jej z innymi pracownikami.
+            </p>
+            
+            <!-- Zdjęcia dla nowego podpunktu z lightboxem -->
+            <div class="additional-images">
+                <!--<a href="#img13"><img src="imagesCAM/CAM2.jpg" alt="Zdjęcie monitor1"></a>-->
+                <!--<a href="#img14"><img src="imagesCAM/CAM4.jpg" alt="Zdjęcie monitor2"></a>-->
+		<!--<a href="#img15"><img src="imagesCAM/CAM5.jpg" alt="Zdjęcie monitor3"></a>-->
+                <!-- Lightbox dla każdego zdjęcia -->
+                <!--<div id="img13" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesCAM/CAM2.jpg" alt="Zdjęcie monitor1"></div>-->
+                <!--<div id="img14" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesCAM/CAM4.jpg" alt="Zdjęcie monitor2"></div>-->
+		<!--<div id="img15" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesCAM/CAM5.jpg" alt="Zdjęcie monitor3"></div>-->             
+            </div>
+
+	    <h4>Stworzenie aplikacji do analizy danych procesowych</h4>
+            <p class="full-description">
+                Za pomocą sztucznej inteligencji stworzyłem również rozbudowaną aplikację pozwalającą na analizę danych całego procesu. Po wdrożeniu na produkcję opracowanej przeze mnie aplikacji do monitoringu, wydajność pracowników zwiększyła się o 15% względem poprzednich miesięcy.
+            </p>
+            
+            <!-- Zdjęcia dla nowego podpunktu z lightboxem -->
+            <div class="additional-images">
+                <!--<a href="#img16"><img src="imagesCAM/CAM21.jpg" alt="Zdjęcie aplikacja1"></a>-->
+                <!--<a href="#img17"><img src="imagesCAM/CAM22.jpg" alt="Zdjęcie aplikacja2"></a>-->
+		
+                <!-- Lightbox dla każdego zdjęcia -->
+                <!--<div id="img16" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesCAM/CAM21.jpg" alt="Zdjęcie aplikacja1"></div>-->
+                <!--<div id="img17" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesCAM/CAM22.jpg" alt="Zdjęcie aplikacja2"></div>-->
+		                
+            </div>		
+
+            <!-- Przycisk Zwiń na końcu galerii -->
+            <label for="toggle-gallery" class="collapse-button">Zwiń</label>
+        </div>
+    </div>
+
+	<!-- Drugi Projekt - System wizyjnej kontroli jakości -->
+    <div class="project">
+        <h3>System wizyjnej kontroli jakości</h3>
+        <p class="short-description">
+            Projekt polegający na zmniejszeniu optycznej kontroli wizyjnej przez pracowników
+        </p>
+        
+        <!-- Przełącznik widoczności galerii -->
+        <input type="checkbox" id="toggle-gallery-2" class="toggle-input">
+        <label for="toggle-gallery-2" class="read-more">Czytaj więcej...</label>
+
+        <!-- Galeria zdjęć i szczegółowy opis -->
+        <div class="gallery">
+            <h4>Mój zakres obowiązków</h4>
+	    <div class="decorative-marker"></div>
+            <h4>Zaprojektowanie uchwytów na kamery</h4>
+            <p class="full-description">
+                Zaprojektowałem uchwyty z możliwością regulacji kąta do kamery marki basler, dedykowanych do systemów wizyjnych.
+            </p>
+	    <h4>Zaprojektowanie uchwytów stablizujących na przewody</h4>
+            <p class="full-description">
+                Zaprojektowałem uchwyty służące do stablizacji przewodów elektrychnych, które eliminują ruch w trzech płaszczyznach, tak aby zapewnić jak najlepsze warunki dla systemu wizyjnego.
+            </p>
+	    <h4>Stworzenie aplikacji do monitoringu wydajności checkpointu</h4>
+            <p class="full-description">
+                Korzystając ze sztucznej inteligencji stworzyłem aplikację, umożliwiającą podgląd w czasie rzeczywistym ilośći wiązek elektrycznych, jakie przeszyły kontrolę wizyjną.
+            </p>
+            <!-- Przycisk Zwiń -->
+            <label for="toggle-gallery-2" class="collapse-button">Zwiń</label>
+        </div>
+    </div>
+		
+	<!-- Drugi Projekt - System wizyjnej kontroli jakości -->
+    <div class="project">
+        <h3>Regały z nawigacją LED do pobierania przewodów</h3>
+        <p class="short-description">
+            Projekt polegający na zmniejszeniu błędów w pobieraniu przewodów przez pracowników poprzez zastosowanie nawigacji LED
+        </p>
+        
+        <!-- Przełącznik widoczności galerii -->
+        <input type="checkbox" id="toggle-gallery-3" class="toggle-input">
+        <label for="toggle-gallery-3" class="read-more">Czytaj więcej...</label>
+
+        <!-- Galeria zdjęć i szczegółowy opis -->
+        <div class="gallery">
+            <h4>Mój zakres obowiązków</h4>
+	    <div class="decorative-marker"></div>
+            <h4>Podłączenie oraz uruchomienie pierwszych regałów do nawigacji LED</h4>
+            <p class="full-description">
+                Podłączyłem z systemem oraz uruchomiłem pierwsze regały do nawigacji LED dla operatorów. 
+            </p>>
+	    <h4>Analiza czasów pracy po wprowadzeniu proejktu nawigacji LED</h4>
+            <p class="full-description">
+                Przy współpracy z Work Methods analizowałem jak zastosowanie regałów do nawigacji LED wpłynęło na produkcję. 
+            </p>>
+
+            <!-- Przycisk Zwiń -->
+            <label for="toggle-gallery-3" class="collapse-button">Zwiń</label>
+        </div>
+    </div>
+
+	<!-- Drugi Projekt - System wizyjnej kontroli jakości -->
+    <div class="project">
+        <h3>Urządzenie do wprowadzania długich przewodów do rur ochronnych</h3>
+        <p class="short-description">
+            Projekt polegający na skonstruowaniu urządzenia do wprowadzania kilkudziesięciometrowych kabli do rur ochronnych
+        </p>
+        
+        <!-- Przełącznik widoczności galerii -->
+        <input type="checkbox" id="toggle-gallery-4" class="toggle-input">
+        <label for="toggle-gallery-4" class="read-more">Czytaj więcej...</label>
+
+        <!-- Galeria zdjęć i szczegółowy opis -->
+        <div class="gallery">
+            <h4>Mój zakres obowiązków</h4>
+	    <div class="decorative-marker"></div>
+            <h4>Modyfikacja podzespołu odpowiadającego za docisk boczny w urządzeniu</h4>
+            <p class="full-description">
+                Zmodyfikowałem podzespół odpowiadający za docisk boczny linki wprowadzanej do rur karbowanych. Moje modyfikacje wyeliminowały drgania, przez które linka ulegała uszkodzeniu. 
+            </p>>
+	    <h4>Przeprowadzenie testów udządzenia</h4>
+            <p class="full-description">
+                Przeprowadzałem testy urządzenia, przed jego implementacją na produkcji, w celu zapewnienia jakości procesu i wyeliminowania wszystkich wad urządzenia. 
+            </p>>
+
+            <!-- Przycisk Zwiń -->
+            <label for="toggle-gallery-4" class="collapse-button">Zwiń</label>
+        </div>
+
+	<!-- Drugi Projekt - System wizyjnej kontroli jakości -->
+    <div class="project">
+        <h3>Zwiększenie wydajności na obszarze cięcia przewodów zgodnie z ideologią Six Sigma</h3>
+        <p class="short-description">
+            Projekt polegający na zwiększeniu wydajności obszaru cięcia przewodów we współpracy z działem jakości, stosując ideologię Six Sigma
+        </p>
+        
+        <!-- Przełącznik widoczności galerii -->
+        <input type="checkbox" id="toggle-gallery-5" class="toggle-input">
+        <label for="toggle-gallery-5" class="read-more">Czytaj więcej...</label>
+
+        <!-- Galeria zdjęć i szczegółowy opis -->
+        <div class="gallery">
+            <h4>Mój zakres obowiązków</h4>
+	    <div class="decorative-marker"></div>
+            <h4>Zindetyfikowanie problemów na obszarze cięcia przewodów</h4>
+            <p class="full-description">
+                Zostałem wyznaczony do zindentyfikowania problemów na obszarze cięcia przewodów zgodnie z ideologią Six Sigma. 
+            </p>>
+	    <h4>Opracowanie oraz zaprezentowanie danych kwartałowych dotyczących obszaru cięcia</h4>
+            <p class="full-description">
+                Byłem odpowiedzialny za opracowanie danych kwartalnych obszaru cięcia przewodów oraz prezentację związanych z nimi problemów w międzynarodowym projekcie Quality Circle. 
+            </p>
+            <!-- Przycisk Zwiń -->
+            <label for="toggle-gallery-5" class="collapse-button">Zwiń</label>
+        </div>
+    </div>
+
+	<!-- Drugi Projekt - Example Project -->
+    <div class="project">
+        <h3>Remont warsztatu</h3>
+        <p class="short-description">
+            Gruntowny remont warsztatu zrealizowany przeze mnie w zimę 2023/2024
+        </p>
+        
+        <!-- Główne zdjęcie projektu -->
+        <a href="#img101">
+            <img src="imagesGAR/GAR3.jpg" alt="Główne zdjęcie projektu Remont warsztatu" class="main-image">
+        </a>
+
+        <!-- Lightbox dla głównego zdjęcia -->
+        <div id="img101" class="lightbox">
+            <a href="#projects" class="close-lightbox">&times;</a>
+            <img src="imagesGAR/GAR3.jpg" alt="Główne zdjęcie projektu Remont warsztatu" class="main-image">
+        </div>
+
+        <!-- Przełącznik widoczności galerii -->
+        <input type="checkbox" id="toggle-gallery-6" class="toggle-input">
+        <label for="toggle-gallery-6" class="read-more">Czytaj więcej...</label>
+
+        <!-- Galeria zdjęć i szczegółowy opis -->
+        <div class="gallery">
+            <h4>Mój zakres obowiązków</h4>
+	    <div class="decorative-marker"></div>
+            <p class="full-description">Krótki opis zakresu obowiązków dla Example Project.</p>
+            
+	    <h4>Zdjęcia przed</h4>
+            <!-- Zdjęcia dla nowego podpunktu z lightboxem -->
+            <div class="additional-images">
+                <a href="#img18"><img src="imagesGAR/GAR1.jpg" alt="Zdjęcie 1"></a>
+                <a href="#img19"><img src="imagesGAR/GAR2.jpg" alt="Zdjęcie 2"></a>
+		<a href="#img20"><img src="imagesGAR/GAR6.jpg" alt="Zdjęcie 3"></a>
+                <!-- Lightbox dla każdego zdjęcia -->
+                <div id="img18" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesGAR/GAR1.jpg" alt="Zdjęcie 1"></div>
+                <div id="img19" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesGAR/GAR2.jpg" alt="Zdjęcie 2"></div>
+		<div id="img20" class="lightbox"><a href="#projects" class="close-lightbox">&times;</a><img src="imagesGAR/GAR6.jpg" alt="Zdjęcie 3"></div>             
+            </div>
+
+            <!-- Przycisk Zwiń -->
+            <label for="toggle-gallery-6" class="collapse-button">Zwiń</label>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Skrypt AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease',
+            once: true
+        });
+    </script>
+
 </body>
 </html>
