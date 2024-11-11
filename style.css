@@ -1,48 +1,823 @@
+/* Stylizacja podstawowa */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Pasek nawigacyjny (sticky) */
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000; /* Aby pasek zawsze był na wierzchu */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#navbar h1 {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#navbar nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+#navbar nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+#navbar nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Sekcja Hero z gradientem */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #0f2027, #2c5364);
+    color: white;
+    padding: 80px;
+    height: 100vh;
+}
+
+.hero-content {
+    max-width: 50%;
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #4caf50;
+}
+
+.hero-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+.hero-image {
+    max-width: 40%;
+    position: relative;
+    animation: fadeInRight 1.5s ease-in-out;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info {
+    margin-top: 20px;
+    color: white;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #4caf50;
+}
+
+/* Stylizacja sekcji O mnie */
+#about {
+    background: linear-gradient(135deg, #333, #444);
+    padding: 60px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+    margin: 40px auto;
+    max-width: 1000px;
+    color: #ddd;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Stylizacja kontenera dla sekcji zdjęć */
+.about-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    max-width: 700px; /* Zwiększona szerokość kontenera */
+    margin: 0 auto; /* Wyśrodkowanie kontenera */
+    padding: 20px; /* Opcjonalne odstępy wokół kontenera */
+}
+
+/* Stylizacja dla ZDJ2 (pierwsze zdjęcie po lewej) */
+.about-image img:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+/* Stylizacja dla ZDJ3 i ZDJ4 (po prawej, jedno nad drugim) */
+.about-image img:nth-child(2),
+.about-image img:nth-child(3) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.about-image img:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.about-image img:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* Efekt powiększenia przy najechaniu */
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsywność dla mniejszych ekranów */
+@media (max-width: 768px) {
+    .about-image {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 200px);
+        max-width: 100%; /* Pełna szerokość na mniejszych ekranach */
+    }
+
+    .about-image img {
+        grid-column: 1 / 2;
+    }
+}
+
+
+
+/* Kolumna z tekstem */
+.about-text {
+    flex: 1 1 60%;
+    font-size: 1.2em;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Ikony w nagłówkach */
+#about h2 i {
+    color: #4caf50;
+    margin-right: 10px;
+}
+
+/* Responsywność dla sekcji O mnie */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-image {
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 150px);
+    }
+}
+
+
+/* Stylizacja sekcji Edukacja */
+#education {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    color: #ddd;
+}
+
+#education h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #4caf50;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Stylizacja osi czasu */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin-left: 20px;
+    border-left: 4px solid #4caf50;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 20px 0;
+    margin-left: 40px;
+}
+
+.timeline-date {
+    font-size: 1.2em;
+    color: #4caf50;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timeline-date .school-name {
+    color: #ff9800; /* Kolor dla nazwy szkoły */
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.timeline-content {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+}
+
+.timeline-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-content p {
+    color: #ddd;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Kółka na osi czasu */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Stylizacja dla logo szkoły w prawym górnym rogu */
+.timeline-content {
+    position: relative;
+}
+
+.timeline-content .school-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px; /* Dostosuj szerokość do potrzeb */
+    height: auto;
+    background-color: white; /* Tło, aby logo było bardziej widoczne */
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Responsywność dla sekcji Edukacja */
+@media (max-width: 768px) {
+    .timeline {
+        margin-left: 10px;
+        border-left: 3px solid #4caf50;
+    }
+
+    .timeline-item {
+        margin-left: 20px;
+    }
+
+    .timeline-content {
+        max-width: 100%;
+    }
+}
+
+
+
+/* Stylizacja sekcji Doświadczenie */
+#experience {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    color: #ddd;
+}
+
+#experience h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #4caf50;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Stylizacja osi czasu */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin-left: 20px;
+    border-left: 4px solid #4caf50;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 20px 0;
+    margin-left: 40px;
+}
+
+.timeline-date {
+    font-size: 1.2em;
+    color: #4caf50;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timeline-content {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+}
+
+.timeline-content h3 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.timeline-content p {
+    color: #ddd;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Kółka na osi czasu */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Kontener flex dla daty i loga */
+.timeline-date {
+    display: flex;
+    align-items: center; /* Wyrównanie do jednej linii */
+    font-size: 1.2em;
+    color: #4caf50;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+/* Stylizacja loga gospodarstwa */
+.farm-logo {
+    width: 380px; /* Dopasowanie szerokości automatycznie */
+    height: 80px; /* Ustalona wysokość loga */
+    margin-left: 15px; /* Odstęp między datą a logiem */
+    vertical-align: middle; /* Dodatkowe wyrównanie */
+}
+
+
+
+
+/* Kontener flex dla daty i loga */
+.timeline-date {
+    display: flex;
+    align-items: baseline; /* Wyrównanie dolnej krawędzi daty i loga */
+    font-size: 1.2em;
+    color: #4caf50;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+/* Stylizacja logo firmy wewnątrz daty */
+.inline-logo {
+    width: 250px; /* Ustawienie szerokości loga na 250px */
+    height: auto;
+    margin-left: 15px; /* Odstęp między datą a logo */
+    vertical-align: middle; /* Dodatkowe wyrównanie w osi poziomej */
+}
+
+
+
+
+
+
+
+
+/* Responsywność dla sekcji Doświadczenie */
+@media (max-width: 768px) {
+    .timeline {
+        margin-left: 10px;
+        border-left: 3px solid #4caf50;
+    }
+
+    .timeline-item {
+        margin-left: 20px;
+    }
+
+    .timeline-content {
+        max-width: 100%;
+    }
+}
+
+/* Stylizacja sekcji projektów */
+#projects {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 40px auto;
     color: #333;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
+.project {
+    margin-bottom: 40px;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
+.project h3 {
+    color: #4caf50;
+    font-size: 1.8em;
+    margin-bottom: 10px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.short-description, .full-description {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 15px;
+.main-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-nav ul li a {
-    color: white;
+/* Przycisk "Czytaj więcej..." */
+.read-more {
+    color: #4caf50;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* Ukrywanie galerii początkowo */
+.gallery {
+    display: none;
+}
+
+/* Pokazanie galerii, gdy checkbox jest zaznaczony */
+.toggle-input:checked ~ .gallery {
+    display: block;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Stylizacja tytułu "Mój zakres obowiązków" */
+.gallery h4 {
+    font-size: 1.5em;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+/* Nowoczesny znacznik pod tytułem */
+.decorative-marker {
+    width: 50px;
+    height: 4px;
+    background-color: #4caf50;
+    margin-bottom: 20px;
+}
+
+/* Dodatkowe zdjęcie */
+.secondary-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Ukrywanie checkboxa */
+.toggle-input {
+    display: none;
+}
+
+/* Zmiana tekstu przycisku na "Zwiń", gdy checkbox jest zaznaczony */
+.toggle-input:checked + .read-more::after {
+    content: "Zwiń";
+}
+
+/* Ustawienia galerii */
+.gallery {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+    position: relative;
+}
+
+/* Pokazanie galerii, gdy checkbox jest zaznaczony */
+.toggle-input:checked ~ .gallery {
+    display: block;
+}
+
+/* Przycisk "Zwiń" */
+.collapse-button {
+    color: #4caf50;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    position: sticky; /* Przypięcie przycisku "Zwiń" */
+    bottom: 0; /* Przycisk przesuwa się przy przewijaniu */
+    background-color: #333;
+    padding: 10px;
+    display: inline-block;
+    width: 100%; /* Ustawienie pełnej szerokości */
+    text-align: center;
+}
+
+/* Stylizacja dla nowych zdjęć w galerii */
+.additional-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.additional-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.additional-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Ukrywanie galerii początkowo */
+.gallery {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Pokazanie galerii, gdy checkbox jest zaznaczony */
+.toggle-input:checked ~ .gallery {
+    display: block;
+}
+
+/* Zielony tekst */
+.highlighted-task {
+    font-size: 1.2em;
+    color: #4caf50;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Efekt powiększenia przy najechaniu */
+.zoomable {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.zoomable:hover {
+    transform: scale(1.2); /* Powiększenie na hover */
+}
+
+/* Nowoczesny znacznik pod tytułem */
+.decorative-marker {
+    width: 50px;
+    height: 4px;
+    background-color: #4caf50;
+    margin-bottom: 20px;
+}
+
+/* Przycisk "Czytaj więcej..." */
+.read-more {
+    color: #4caf50;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* Przycisk Zwiń */
+.collapse-button {
+    color: #4caf50;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+
+
+/* Gradienty dla poszczególnych sekcji */
+#about {
+    background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+}
+
+#education {
+    background: linear-gradient(135deg, #e9f7ef, #d4efdf);
+}
+
+#experience {
+    background: linear-gradient(135deg, #fef9e7, #fcf3cf);
+}
+
+#projects {
+    background: linear-gradient(135deg, #f5eef8, #d7bde2);
+}
+
+/* Inne ustawienia sekcji */
+section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+section h2 i {
+    margin-right: 10px;
+    color: #4caf50;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Animacje dla sekcji przy przewijaniu */
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Animacje kluczowe */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+}
+
+/* Stylizacja lightboxa */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox:target {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 80vw;  /* Zwiększ rozmiar zdjęcia do 80% szerokości widoku */
+    max-height: 100vh; /* Zwiększ rozmiar zdjęcia do 100% wysokości widoku */
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
     text-decoration: none;
 }
 
-section {
-    padding: 20px;
-}
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
+
