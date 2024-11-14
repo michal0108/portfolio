@@ -819,5 +819,78 @@ section:hover {
     text-decoration: none;
 }
 
+/* Stylizacja dla smartfonów (szerokość ekranu poniżej 768px) */
+@media (max-width: 768px) {
+    /* Ogólne ustawienia */
+    body {
+        padding: 10px;
+    }
+
+    /* Pasek nawigacyjny */
+    #navbar {
+        flex-direction: column;
+        text-align: left;
+        padding: 20px;
+    }
+
+    #navbar nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navbar nav ul li {
+        margin-bottom: 10px;
+    }
+
+    /* Sekcja Hero */
+    #hero {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        max-width: 80%;
+        margin: 20px auto;
+    }
+
+    /* Sekcja O mnie */
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-image {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 200px);
+    }
+
+    /* Sekcja Edukacja i Doświadczenie */
+    .timeline-content {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    /* Sekcja Projekty */
+    .project {
+        margin-bottom: 20px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .additional-images img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
 
 
