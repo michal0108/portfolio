@@ -912,5 +912,29 @@ section:hover {
         align-items: center; /* Wyrównanie logo i daty do środka */
     }
 }
+/* Domyślnie ukrywaj galerię na wszystkich rozmiarach ekranów */
+.toggle-input:not(:checked) ~ .gallery {
+    display: none;
+}
+
+/* Wyświetl galerię dopiero po zaznaczeniu checkboxa */
+.toggle-input:checked ~ .gallery {
+    display: block;
+}
+
+/* Media query dla urządzeń mobilnych */
+@media (max-width: 768px) {
+    .gallery {
+        display: none; /* Upewnij się, że galeria jest ukryta na małych ekranach */
+    }
+
+    .toggle-input:not(:checked) ~ .gallery {
+        display: none; /* Galeria pozostaje ukryta przed kliknięciem */
+    }
+
+    .toggle-input:checked ~ .gallery {
+        display: block; /* Galeria pokazuje się dopiero po kliknięciu "Czytaj więcej..." */
+    }
+}
 
 
