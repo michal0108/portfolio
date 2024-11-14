@@ -892,5 +892,25 @@ section:hover {
         margin-bottom: 10px;
     }
 }
+/* Media queries dla smartfonów */
+@media (max-width: 768px) {
+    .inline-logo {
+        width: 150px; /* Zmniejszenie szerokości logo */
+        height: auto; /* Automatyczne skalowanie wysokości */
+        margin-left: 10px; /* Zmniejszony odstęp od daty */
+    }
+
+    .farm-logo {
+        width: 200px; /* Zmniejszenie szerokości logo gospodarstwa */
+        height: auto;
+        margin-left: 10px;
+    }
+
+    /* Wyrównanie logotypów w osi poziomej względem dat */
+    .timeline-date {
+        display: flex;
+        align-items: center; /* Wyrównanie logo i daty do środka */
+    }
+}
 
 
