@@ -1029,13 +1029,22 @@ section:hover {
 
 .experience-list li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 10px;
     font-size: 1em;
+    line-height: 1.5;
 }
 
 .experience-list i {
     color: #4caf50; /* Zielony kolor ikony */
     margin-right: 10px;
     font-size: 1.2em; /* Rozmiar ikony */
+    flex-shrink: 0;
 }
+
+.experience-list p {
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
