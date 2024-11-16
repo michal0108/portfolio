@@ -48,6 +48,69 @@ body {
     background-color: #555;
     border-radius: 5px;
 }
+/* Stylizacja listy nawigacyjnej */
+#navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+#navbar nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Stylizacja nawigacji dla urządzeń mobilnych */
+@media (max-width: 768px) {
+    #navbar nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    #navbar nav ul li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    #language-switch {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    #language-switch button {
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: none;
+        background-color: #4caf50;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    #language-switch button:hover {
+        background-color: #388e3c;
+    }
+}
 
 /* Sekcja Hero z gradientem */
 #hero {
