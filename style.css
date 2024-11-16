@@ -1021,3 +1021,21 @@ section:hover {
 #language-switch button:hover {
     background-color: #45a049;
 }
+/* Stylizacja listy doświadczeń */
+.experience-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.experience-list i {
+    color: #4caf50; /* Zielony kolor ikony */
+    margin-right: 10px;
+    font-size: 1.2em; /* Rozmiar ikony */
+}
