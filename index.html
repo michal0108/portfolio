@@ -23,14 +23,24 @@
                 <li><a href="#projects">Projekty</a></li>
             </ul>
         </nav>
+	    <!-- Przełącznik języka -->
+        <div id="language-switch">
+            <button id="btn-pl">Polski</button>
+            <button id="btn-en">English</button>
+        </div>
     </header>
 
     <!-- Sekcja Hero z informacjami kontaktowymi pod zdjęciem -->
     <section id="hero">
         <div class="hero-content">
-            <h1>Michał Pomykała</h1>
-            <h2>Inżynier mechanik i pasjonat technologii</h2>
-            <p>Tworzę innowacyjne rozwiązania techniczne, korzystając z najnowszych technologii</p>
+            <h1 data-lang="pl">Michał Pomykała</h1>
+	    <h1 data-lang="en" style="display: none;">Michael Pomykala</h1>
+
+	    <h2 data-lang="pl">Inżynier mechanik i pasjonat technologii</h2>
+	    <h2 data-lang="en" style="display: none;">Mechanical engineer and technology enthusiast</h2>
+
+	    <p data-lang="pl">Tworzę innowacyjne rozwiązania techniczne, korzystając z najnowszych technologii</p>
+	    <p data-lang="en" style="display: none;">I create innovative technical solutions using the latest technologies</p>
         </div>
         <div class="hero-image">
             <img src="images/ZDJ.png" alt="Zdjęcie" />
@@ -942,5 +952,6 @@
         });
     </script>
 
+<script src="js/script.js"></script>		
 </body>
 </html>
